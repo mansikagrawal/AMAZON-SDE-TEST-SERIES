@@ -41,7 +41,7 @@ vector<int> largestAndSecondLargest(int, int[]);
 // } Driver Code Ends
 
 /* Function to find largest and second largest element
-*sizeOfArray : number of elements in the array
+*n : number of elements in the array
 * arr = input array
 */
 vector<int> largestAndSecondLargest(int n, int arr[])
