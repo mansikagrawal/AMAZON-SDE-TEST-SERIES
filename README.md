@@ -7,7 +7,7 @@
  ◙ Arrays          
  ◙ Searching          
  ◙ Sorting          
- ◙ Matrix
+ ◙ Matrix     
  ◙ Hashing          
  ◙ Strings          
  ◙ Link List          
