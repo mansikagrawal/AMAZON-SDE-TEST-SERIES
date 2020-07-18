@@ -68,8 +68,9 @@ int thirdLargest(int a[], int n)
 
     if (n < 3)
         return -1;
+    // Max heap 
     make_heap(a, a + n);
-
+    // Sorting the max heap
     sort_heap(a, a + n);
 
     return a[n - 3];
