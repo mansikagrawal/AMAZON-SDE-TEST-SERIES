@@ -21,7 +21,4 @@
  ◙ Dynamic Programming 
  
  
- Per day 3 questions will be added 
- 
- 
  Happy coding 😊
