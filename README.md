@@ -4,21 +4,21 @@
  
  
  # TOPICS COVERED 
- ◙ Arrays 
- ◙ Searching
- ◙ Sorting 
+ ◙ Arrays          
+ ◙ Searching          
+ ◙ Sorting          
  ◙ Matrix
- ◙ Hashing
- ◙ Strings
- ◙ Link List
- ◙ Stack
- ◙ Queue
- ◙ Tree 
- ◙ Binary search tree
- ◙ Heap
- ◙ Graph
- ◙ Back Tracking
- ◙ Dynamic Programming 
+ ◙ Hashing          
+ ◙ Strings          
+ ◙ Link List          
+ ◙ Stack          
+ ◙ Queue          
+ ◙ Tree           
+ ◙ Binary search tree          
+ ◙ Heap          
+ ◙ Graph          
+ ◙ Back Tracking          
+ ◙ Dynamic Programming          
  
  
  Happy coding 😊
