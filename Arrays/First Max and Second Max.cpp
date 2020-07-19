@@ -1,7 +1,9 @@
 /* Given an unsorted array arr[] of size N, rotate it by D elements in the counter-clockwise direction. 
 
 Input: 
-The first line of the input contains T denoting the number of test cases. The first line of each test case contains two space-separated elements, N denoting the size of the array and an integer D denoting the number size of the rotation. The subsequent line will contain N space-separated array elements.
+The first line of the input contains T denoting the number of test cases.
+The first line of each test case contains two space-separated elements, N denoting the size of the array and an integer D denoting the number size of the rotation.
+The subsequent line will contain N space-separated array elements.
 
 Output:
 For each test case, in a new line, print the rotated array.
