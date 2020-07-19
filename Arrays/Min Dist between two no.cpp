@@ -2,13 +2,16 @@
 You are given an array A, of N elements. Find minimum index based distance between two elements of the array, x and y.
 
 Input :
-The first line of input contains an integer T, denoting the number of test cases. Then T test cases follow. Each test case consists of three lines. The first line of each test case contains an integer N denoting size array. Then in the next line are N space separated values of the array A. The last line of each test case contains two integers  x and y.
+The first line of input contains an integer T, denoting the number of test cases.
+Then T test cases follow. Each test case consists of three lines. The first line of each test case contains an integer N denoting size array.
+Then in the next line are N space separated values of the array A. The last line of each test case contains two integers  x and y.
 
 Output :
 Print the minimum index based distance between x and y.
 
 Your Task:
-Complete the function minDist() which takes the array, n, x and y as input parameters and returns the minimum distance between x and y in the array. If no such distance is possible then return -1.
+Complete the function minDist() which takes the array, n, x and y as input parameters and returns the minimum distance between x and y in the array.
+If no such distance is possible then return -1.
 
 Expected Time Complexity: O(N)
 Expected Auxiliary Space: O(1)
