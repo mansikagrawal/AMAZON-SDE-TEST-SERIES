@@ -3,7 +3,8 @@ Given an array consisting of only prime numbers, remove all duplicate numbers fr
 Note: Retain the first occurrence of the duplicate element.
 
 Input:
-First line of input contains number of testcases T. For each testcase, there will be two lines, first of which contains N, the size of array. The second line contains N space separated elements of the array. 
+First line of input contains number of testcases T. For each testcase, there will be two lines,
+first of which contains N, the size of array. The second line contains N space separated elements of the array. 
 
 Output:
 Print the resultant array with no duplicate elements. 
