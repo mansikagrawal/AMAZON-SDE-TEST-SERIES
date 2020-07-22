@@ -38,8 +38,10 @@ Explanation:
 Test case 1: a sub-sequence 1 2 3 exist.
 Test case 2: no such sub-sequence exist. */
 
-/* Hint - 1) Create an auxiliary array smaller[0..n-1]. smaller[i] should store the index of a number which is smaller than arr[i] and is on left side of arr[i]. smaller[i] should contain -1 if there is no such element.
-2) Create another auxiliary array greater[0..n-1]. greater[i] should store the index of a number which is greater than arr[i] and is on right side of arr[i]. greater[i] should contain -1 if there is no such element.
+/* Hint - 1) Create an auxiliary array smaller[0..n-1]. smaller[i] should store the index of a number which is smaller than arr[i] 
+and is on left side of arr[i]. smaller[i] should contain -1 if there is no such element.
+2) Create another auxiliary array greater[0..n-1]. greater[i] should store the index of a number which is greater than arr[i] 
+and is on right side of arr[i]. greater[i] should contain -1 if there is no such element.
 3) Finally traverse both smaller[] and greater[] and find the index i for which both smaller[i] and greater[i] are not -1.  */
 
 #include <bits/stdc++.h>
