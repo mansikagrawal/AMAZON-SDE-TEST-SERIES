@@ -66,7 +66,7 @@ int main()
     }
     return 0;
 }
-// } Driver Code Ends
+
 
 // Function to find equilibrium point
 // a: input array
