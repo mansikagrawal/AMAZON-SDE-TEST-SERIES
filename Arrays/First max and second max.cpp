@@ -1,103 +1,78 @@
+/* Given an unsorted array arr[] of size N, rotate it by D elements in the counter-clockwise direction. 
 
-
-/* CPP code to find largest and
- second largest element in the array
-
-
-
-Expected Time Complexity: O(N).
-Expected Auxiliary Space: O(1).
-
-Constraints:
-1 <= T <= 100
-1 <= N <= 106
-1 <= arr[i] <= 106
-
-Example:
-Input:
-3
-5
-1 2 3 4 5
-3
-2 1 2
-2
-5 5
+Input: 
+The first line of the input contains T denoting the number of test cases.
+The first line of each test case contains two space-separated elements, N denoting the size of the array and an integer D denoting the number size of the rotation.
+The subsequent line will contain N space-separated array elements.
 
 Output:
-5 4
-2 1
-5 -1
+For each test case, in a new line, print the rotated array.
 
-Explanation:
-Testcase 1: From the given array elements, 5 is the largest and 4 is the second largest.
-Testcase 2: From the given array elements, 2 is the largest and 1 is the second largest.
-Testcase 3: From the given array elements, 5 is the largest and -1 is the second largest.    */
+Your Task:
+Complete the function rotateArr() which takes the array, D and N as input parameters and rotates the array by D elements. 
+
+Expected Time Complexity: O(N)
+Expected Auxiliary Space: O(1)
+
+Constraints:
+1 <= T <= 200
+1 <= N <= 107
+1 <= D <= N
+0 <= arr[i] <= 105
+
+Example:
+Sample Input:
+2
+5 2
+1 2 3 4 5 
+10 3
+2 4 6 8 10 12 14 16 18 20
+
+Sample Output:
+3 4 5 1 2
+8 10 12 14 16 18 20 2 4 6
+
+Explanation :
+Testcase 1: 1 2 3 4 5  when rotated by 2 elements, it becomes 3 4 5 1 2.
+Testcase 2: 2 4 6 8 10 12 14 16 18 20  when rotated by 3 elements, it becomes 8 10 12 14 16 18 20 2 4 6.      */
 
 #include <bits/stdc++.h>
 using namespace std;
 
-vector<int> largestAndSecondLargest(int, int[]);
-
-// } Driver Code Ends
-
-/* Function to find largest and second largest element
-*n : number of elements in the array
-* arr = input array
-*/
-vector<int> largestAndSecondLargest(int n, int arr[])
+void rotateArr(int a[], int d, int n)
 {
-    int max1 = INT_MIN, max2 = INT_MIN;
-    vector<int> v;
-    v.clear();
-    /*********************************
-     * Your code here
-     * This function should return a
-     * vector with first element as
-     * max and second element as
-     * second max
-     * *******************************/
-    for (int i = 0; i < n; i++) {
-        if (max1 < arr[i]) {
-            max2 = max1;
-            max1 = arr[i];
-        }
-        else if (arr[i] != max1 and arr[i] > max2)
-            max2 = arr[i];
-    }
 
-    if (max2 == INT_MIN) {
-        v.push_back(max1);
-        v.push_back(-1);
-    }
-    else {
-        v.push_back(max1);
-        v.push_back(max2);
-    }
+    // first reverse the d elements
+    reverse(a, a + d);
 
-    return v;
+    // now reverse the last n-d elements
+    reverse(a + d, a + n);
+
+    // finally, reverse the whole array
+    reverse(a, a + n);
 }
 
 int main()
 {
+    int t;
+    cin >> t;
 
-    int testcases;
-    cin >> testcases;
+    while (t--) {
+        int n, d;
+        cin >> n >> d;
 
-    // Looping through all testcases
-    while (testcases--) {
-        int sizeOfArray;
-        cin >> sizeOfArray;
+        int arr[n];
 
-        int arr[sizeOfArray];
-
-        // Array input
-        for (int index = 0; index < sizeOfArray; index++) {
-            cin >> arr[index];
+        for (int i = 0; i < n; i++) {
+            cin >> arr[i];
         }
 
-        vector<int> ans = largestAndSecondLargest(sizeOfArray, arr);
-        cout << ans[0] << ' ' << ans[1] << endl;
-    }
+        rotateArr(arr, d, n);
 
+        for (int i = 0; i < n; i++) {
+            cout << arr[i] << " ";
+        }
+        cout << endl;
+    }
     return 0;
 }
