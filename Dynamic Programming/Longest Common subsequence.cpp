@@ -1,4 +1,4 @@
-/* Longest Common Subsequence 
+/* Longest Common Subsequence
 Given two sequences, find the length of longest subsequence present in both of them. Both the strings are of uppercase.
 
 Input:
@@ -37,7 +37,7 @@ LCS for input Sequences “ABCDGH” and “AEDFHR” is “ADH” of length 3.
 
 LCS of "ABC" and "AC" is "AC" of length 2. */
 
-/* Hint - 
+/* Hint -
 Complete Solution:
 
 A character may or may not be included in the subsequence. There are 2 cases:
