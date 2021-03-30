@@ -1,4 +1,5 @@
-/* Given two integer arrays. Sort the first array such that all the relative positions of the elements in the first array are the same as the elements in the second array.
+/* Given two integer arrays. 
+Sort the first array such that all the relative positions of the elements in the first array are the same as the elements in the second array.
 See example for better understanding.
 
 Example 1:
@@ -25,13 +26,17 @@ so we cannot sort A1 according to A2.
 Hence we sort the elements in
 non-decreasing order.
 Input:
-The first line of input contains the number of test cases. For each testcase, the first line of input contains the length of arrays N and M and the next two lines contain N and M elements respectively.
+The first line of input contains the number of test cases. For each testcase,
+the first line of input contains the length of arrays N and M and the next two lines contain N and M elements respectively.
 
 Output:
 For each testcase, in a new line, print the elements of A1 sorted relatively according to A2.
 
 Your Task:
-You don't need to read input or print anything. Your task is to complete the function sortA1ByA2() which takes the array A1[], array A2[] and their respective size N and M as inputs and sorts the array A1[] such that the relative positions of the elements in A1[] are same as the elements in A2[]. For the elements not present in A2[] but in A1[], it appends them at the last in increasing order.
+You don't need to read input or print anything. Your task is to complete
+the function sortA1ByA2() which takes the array A1[], array A2[] and their respective size N and M as inputs and 
+sorts the array A1[] such that the relative positions of the elements in A1[] are same as the elements in A2[].
+For the elements not present in A2[] but in A1[], it appends them at the last in increasing order.
 
 Expected Time Complexity: O(NlogN).
 Expected Auxiliary Space: O(N).
@@ -40,7 +45,8 @@ Constraints:
 1 ≤ N,M  ≤ 106
 1 ≤ A1[], A2[] <= 106 */
 
-/* Try storing the frequencies of the elements present in the array A1[] in a hash table and then traverse the array A2[] from its beginning and check the frequency of that element in the hash table we built. */
+/* Try storing the frequencies of the elements present in the array A1[] in a hash table and
+then traverse the array A2[] from its beginning and check the frequency of that element in the hash table we built. */
 
 //Initial template for C++
 
